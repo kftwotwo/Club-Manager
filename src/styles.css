@@ -35,3 +35,7 @@ textarea {
   text-align: center;
   vertical-align: middle;
 }
+
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHpQdztEtj1tl8hw4ydsb4QB1UzZCfgRx9vJXn9MwteUDLfzVSuQ');
+}
