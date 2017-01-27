@@ -1,31 +1,41 @@
-# ClubMan
+# Club Manager
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+ Able to view a team of club members and visit their page, {Date of current version}
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ By [Kevin Finley](http://www.kfinley.com)
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+As a user you can view all teams and each member and visit their profile page which includes more details about them. Also you can filter by what role that they take place of doing.
 
-## Build
+## Setup/Installation Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Clone the repository and `cd` into your directory:
+```
+$ bundle install
+```
 
-## Running unit tests
+## Known Bugs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you notice any bugs or problems you can fill out an issue [here](http://www.github.com/kftwotwo/{project}/issues) or feel free to submit a pull request.
 
-## Running end-to-end tests
+## Contact details
+Here is my email kf.two.two@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Contribute
 
-## Deploying to GitHub Pages
+Feel free to submit a pull request!
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+## Technologies Used
+```
+HTML
+CSS
+Javascript
+TypeScript
+Angular-CLI
+```
+### License
 
-## Further help
+*This is under a MIT License*
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2016 **_Kevin Finley_**
