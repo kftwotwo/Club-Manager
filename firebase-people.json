@@ -1,0 +1,20 @@
+{ "members": [{
+    "first": "Dillion",
+    "last": "Dodge",
+    "role": "car guy",
+    "bio": "Live's in MT",
+    "id": "1"
+    }, {
+    "first": "Chance",
+    "last": "Cross",
+    "role": "music producer",
+    "bio": "he loves music",
+    "id": "2"
+      }, {
+    "first": "Alex",
+    "last": "Joe",
+    "role": "Body Gaurd",
+    "bio": "Works out alot",
+    "id": "3"
+  }]
+}

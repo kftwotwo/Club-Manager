@@ -1,7 +1,7 @@
 <p>
   all-people works!
 </p>
-<div *ngFor="let member of members" class="panel panel-default" (click)="goToDetailPage(member)">
+<div *ngFor="let member of members | async" class="panel panel-default" (click)="goToDetailPage(member)">
   <div class="panel-body">
     <h3>{{member.first}} {{member.last}}</h3>
   </div>

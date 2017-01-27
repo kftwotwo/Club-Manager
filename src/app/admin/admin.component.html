@@ -1,0 +1,28 @@
+<div class="panel panel-default row">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member</h3>
+  </div>
+  <div class="panel-body">
+    <div class="input-group">
+      <label>First Name</label>
+      <input class="form-control" #newFirst>
+    </div>
+
+    <div class="input-group">
+      <label>Last Name</label>
+      <input class="form-control" #newLast>
+    </div>
+
+    <div class="input-group">
+      <label>Role</label>
+      <input class="form-control" #newRole>
+    </div>
+
+    <div class="input-group">
+      <label>Bio</label><br>
+      <textarea class="form-control" #newBio></textarea>
+    </div>
+    <br>
+    <button class="btn btn-success" (click)="submitForm(newFirst.value, newLast.value, newRole.value, newBio.value); newFirst.value=''; newLast.value=''; newRole.value=''; newBio.value=''">Add</button>
+  </div>
+</div>
