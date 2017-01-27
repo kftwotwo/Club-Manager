@@ -23,6 +23,5 @@ export class AllPeopleComponent implements OnInit {
 
    ngOnInit(){
      this.members = this.memberService.getMembers();
-     console.log(this.router.url);
    }
   }

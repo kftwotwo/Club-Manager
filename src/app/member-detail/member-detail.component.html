@@ -1,7 +1,11 @@
-<p>
-  member-detail works!
-</p>
+<div class="center-stuff">
+  <img class="large-pic" src="{{(memberToDisplay | async)?.profileImg}}">
+</div>
 
-<p>{{(memberToDisplay | async)?.first}}</p>
-<p>{{(memberToDisplay | async)?.role}}</p>
-<p>{{(memberToDisplay | async)?.bio}}</p>
+<div class="center-text">
+
+  <h2>{{(memberToDisplay | async)?.first}} {{(memberToDisplay | async)?.last}}</h2>
+  <h2>{{(memberToDisplay | async)?.role}}</h2>
+
+  <p class="">{{(memberToDisplay | async)?.bio}}</p>
+</div>

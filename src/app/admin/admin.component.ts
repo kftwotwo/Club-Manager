@@ -13,9 +13,8 @@ export class AdminComponent {
 
   constructor(private memberService: MemberService) { }
 
-  submitForm(first: string, last: string, role: string, bio: string) {
-    var newMember: Member = new Member(first, last, role, bio);
-    console.log(newMember);
+  submitForm(first: string, last: string, role: string, bio: string, profileImg: string) {
+    var newMember: Member = new Member(first, last, role, bio, profileImg);
     this.memberService.addMember(newMember);
   }
 

@@ -1,19 +1,24 @@
-<h4>Edit Member</h4>
 
-<label>New First:</label>
-<input [(ngModel)]="selectedMember.first">
-<br>
+<div class="pull-left">
+  <label>New First</label><br>
+  <input [(ngModel)]="selectedMember.first">
+  <br>
 
-<label>New Last:</label>
-<input [(ngModel)]="selectedMember.last">
-<br>
+  <label>New Last</label><br>
+  <input [(ngModel)]="selectedMember.last">
+  <br>
 
-<label>New Role:</label>
-<input [(ngModel)]="selectedMember.role">
-<br>
+  <label>New Role</label><br>
+  <input [(ngModel)]="selectedMember.role">
+  <br>
+</div>
 
-<label>New Bio</label>
-<input [(ngModel)]="selectedMember.bio">
-
-<button (click)="updateMember(selectedMember)">Update</button>
-<button (click)="deleteMember(selectedMember)">Delete</button>
+<div class="pull-center">
+  <label>New Bio</label><br>
+  <textarea [(ngModel)]="selectedMember.bio"></textarea><br>
+  <label>New Profile Picture (URL)</label>
+  <input [(ngModel)]="selectedMember.profileImg">
+</div>
+<button class="btn btn-warning" (click)="updateMember(selectedMember)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+<button class="btn btn-danger"(click)="deleteMember(selectedMember)">
+<i class="fa fa-trash" aria-hidden="true"></i></button>

@@ -1,1 +1,37 @@
+.large-pic {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
 
+.small-pic {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.center-pic {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid black;
+}
+
+.center-stuff {
+  margin: auto;
+    width: 35%;
+}
+
+textarea {
+   resize: none;
+   height: 100px;
+   width: 450px;
+   border-radius: 10px;
+}
+
+.center-text {
+  text-align: center;
+  vertical-align: middle;
+}

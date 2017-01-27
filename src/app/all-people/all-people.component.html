@@ -1,11 +1,11 @@
-<p>
-  all-people works!
-</p>
 <div *ngFor="let member of members | async" class="panel panel-default">
   <div class="panel-body">
     <h3>{{member.first}} {{member.last}}</h3>
-    <button (click)="goToDetailPage(member)">View</button>
+    <img class="small-pic"src="{{member.profileImg}}">
+    <button class="btn btn-primary"(click)="goToDetailPage(member)">View</button>
     <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <em>{{member.role}}</em>
       <p>{{member.bio}}</p>
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
