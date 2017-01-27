@@ -6,12 +6,14 @@
 
 ## Description
 
-As a user you can view all teams and each member and visit their profile page which includes more details about them. Also you can filter by what role that they take place of doing.
+As a user you can view all teams and each member and visit their profile page which includes more details about them. Also you can filter by what role that they take place of doing. As a user you can delete/edit/create profiles.
 
 ## Setup/Installation Requirements
 
 Clone the repository and `cd` into your directory:
 ```
+$ npm install
+$ bower install
 $ bower install bootstrap --save
 $ ng serve
 ```
