@@ -1,0 +1,18 @@
+<h4>Edit Member</h4>
+
+<label>New First:</label>
+<input [(ngModel)]="selectedMember.first">
+<br>
+
+<label>New Last:</label>
+<input [(ngModel)]="selectedMember.last">
+<br>
+
+<label>New Role:</label>
+<input [(ngModel)]="selectedMember.role">
+<br>
+
+<label>New Bio</label>
+<input [(ngModel)]="selectedMember.bio">
+
+<button (click)="updateMember(selectedMember)">Update</button>

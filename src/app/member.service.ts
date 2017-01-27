@@ -29,4 +29,9 @@ export class MemberService {
   getMemberById(memberId: string){
     return this.angularFire.database.object('members/' + memberId);
   }
+
+  updateAlbum(localUpdatedMember){
+    var albumEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    albumEntryInFirebase.update({first: localUpdatedMember.first, last: localUpdatedMember.last, role: localUpdatedMember.role, bio: localUpdatedMember.bio});
+  }
 }
