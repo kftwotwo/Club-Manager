@@ -15,8 +15,14 @@ export class EditMemberComponent implements OnInit {
   ngOnInit() {
   }
 
-  updateMember(memberToUpdate){
-    this.memberService.updateAlbum(memberToUpdate);
+  updateMember(member){
+    this.memberService.updateMember(member);
     alert("Saved");
+  }
+
+  deleteMember(member){
+    if(confirm("Are you sure you want to delete this person from the club?")){
+      this.memberService.deleteMember(member);
+    }
   }
 }

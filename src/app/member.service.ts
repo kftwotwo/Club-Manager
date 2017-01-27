@@ -30,8 +30,13 @@ export class MemberService {
     return this.angularFire.database.object('members/' + memberId);
   }
 
-  updateAlbum(localUpdatedMember){
-    var albumEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
-    albumEntryInFirebase.update({first: localUpdatedMember.first, last: localUpdatedMember.last, role: localUpdatedMember.role, bio: localUpdatedMember.bio});
+  updateMember(member){
+    var memberFirebase = this.getMemberById(member.$key);
+    memberFirebase.update({first: member.first, last: member.last, role: member.role, bio: member.bio});
+  }
+
+  deleteMember(member){
+    var memberFirebase = this.getMemberById(member.$key);
+    memberFirebase.remove();
   }
 }
