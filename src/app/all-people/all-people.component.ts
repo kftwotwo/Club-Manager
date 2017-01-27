@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Member } from '../member.model'
+import { Member } from '../member.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-people',
@@ -7,6 +8,9 @@ import { Member } from '../member.model'
   styleUrls: ['./all-people.component.css']
 })
 export class AllPeopleComponent {
+
+  constructor(private router: Router){}
+
   members: Member[] = [
      new Member("Kevin", "Finley",
          "Manager", 'Fun to work with', 1),
@@ -15,4 +19,7 @@ export class AllPeopleComponent {
      new Member("Nick", "Goldman",
          "Head Chef", 'I love team work and I like keeping everyone together and being on the same page', 3)
    ];
-}
+   goToDetailPage(clickedMember: Member) {
+     this.router.navigate(['teams', clickedMember.id]);
+   };
+  }
