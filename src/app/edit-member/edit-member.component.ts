@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewContainerRef } from '@angular/core';
 import { Member } from '../member.model';
 import {  MemberService } from '../member.service';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'app-edit-member',
@@ -10,14 +11,19 @@ import {  MemberService } from '../member.service';
 export class EditMemberComponent implements OnInit {
   @Input() selectedMember;
 
-  constructor(private memberService: MemberService) { }
+  constructor(private memberService: MemberService, public toastr: ToastsManager, vcr: ViewContainerRef) {
+    this.toastr.setRootViewContainerRef(vcr);
+  }
 
   ngOnInit() {
   }
 
   updateMember(member){
     this.memberService.updateMember(member);
-    alert("Saved");
+  }
+
+  showSuccess() {
+    this.toastr.success('Success!');
   }
 
   deleteMember(member){

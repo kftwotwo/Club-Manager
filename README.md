@@ -25,11 +25,11 @@ To view the page visit `localhost:4200`
 If you notice any bugs or problems you can fill out an issue [here](http://www.github.com/kftwotwo/Club-Manager/issues) or feel free to submit a pull request.
 
 ## Contact details
-Here is my email kf.two.two@gmail.com
+If you need to contact me my email is `kftwotow@gmail.com` 
 
 ## Contribute
 
-Feel free to submit a pull request!
+If you wish to contribute create an issue and describe your idea then fork it and submit a pull request!
 
 ## Technologies Used
 ```
