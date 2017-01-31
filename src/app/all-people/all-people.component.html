@@ -1,4 +1,5 @@
-<div *ngFor="let member of members | async" class="panel panel-default">
+<input placeholder="Filter Here..." [(ngModel)] = 'byRole'><br><br>
+<div *ngFor="let member of members | async | role:byRole" class="panel panel-default">
   <div class="panel-body">
     <h3>{{member.first}} {{member.last}}</h3>
     <img class="small-pic"src="{{member.profileImg}}">
